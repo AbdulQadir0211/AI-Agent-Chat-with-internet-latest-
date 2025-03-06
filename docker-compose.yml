@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .  # Build from the current directory
+      dockerfile: Dockerfile  # Specify the Dockerfile
+    image: abdulqadir02/langgraph-ai-bot:latest  # Name and tag the image
+    ports:
+      - "9999:9999"  # FastAPI backend
+      - "8501:8501"  # Streamlit frontend
+    env_file:
+      - .env  # Load environment variables (optional)
