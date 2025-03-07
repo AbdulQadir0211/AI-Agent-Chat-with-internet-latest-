@@ -44,7 +44,7 @@ load_dotenv()
 ## Usage
 ### Running the FastAPI Server
 ```bash
-uvicorn app:app --host 127.0.0.1 --port 9999 --reload
+https://aiagentchatbot.streamlit.app/)
 ```
 This will start the API server at `http://127.0.0.1:9999`
 
